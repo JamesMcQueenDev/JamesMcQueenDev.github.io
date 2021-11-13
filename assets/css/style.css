@@ -69,8 +69,9 @@ h1, h2, h3, h4, h5, h6 {
   transition: all ease-in-out 0.5s;
   z-index: 9997;
   transition: all 0.5s;
-  padding: 0 15px;
+  padding: 45px 15px;
   background: #040b14;
+  opacity: 93%;
   overflow-y: auto;
 }
 #header .profile img {
@@ -200,25 +201,20 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   background-size: cover;
 }
-#hero:before {
-  content: "";
-  background: rgba(5, 13, 24, 0.3);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-}
-
 #hero video{
-  position: relative;
+  object-fit: cover;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);   
   z-index: -1;
 }
 
 #hero .hero-container {
   position: relative;
-  z-index: 2;
+  /*z-index: 2;*/
   min-width: 300px;
 }
 #hero h1 {
@@ -227,18 +223,21 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+  z-index: 1;
 }
 #hero p {
   color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
+  z-index: 1;
 }
 #hero p span {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
+  z-index: 1;
 }
 @media (min-width: 1024px) {
   #hero {
@@ -939,6 +938,7 @@ section {
   bottom: 0;
   width: 300px;
   z-index: 9999;
+  opacity: 93%;
   background: #040b14;
 }
 #footer .copyright {

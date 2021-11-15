@@ -1,9 +1,3 @@
-/**
-* Template Name: iPortfolio - v3.6.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -51,7 +45,7 @@
       let section = select(navbarlink.hash)
       if (!section) return
       if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active')
+        navbarlink.classList.add('activate')
       } else {
         navbarlink.classList.remove('active')
       }
@@ -77,9 +71,10 @@
   let backtotop = select('.back-to-top')
   if (backtotop) {
     const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
+      if (window.innerHeight > 0) {
         backtotop.classList.add('active')
-      } else {
+      } 
+      else {
         backtotop.classList.remove('active')
       }
     }

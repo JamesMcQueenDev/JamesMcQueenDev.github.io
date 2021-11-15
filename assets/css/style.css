@@ -34,17 +34,17 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
-  bottom: 15px;
+  right: 50%;
+  bottom: 25px;
   z-index: 996;
   background: #149ddd;
-  width: 40px;
-  height: 40px;
+  width: 65px;
+  height: 65px;
   border-radius: 50px;
   transition: all 0.4s;
 }
 .back-to-top i {
-  font-size: 28px;
+  font-size: 40px;
   color: #fff;
   line-height: 0;
 }
@@ -206,6 +206,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   min-width: 100%;
   min-height: 100%;
+  resize: horizontal;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);   

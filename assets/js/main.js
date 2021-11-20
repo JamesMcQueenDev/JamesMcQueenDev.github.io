@@ -45,7 +45,7 @@
       let section = select(navbarlink.hash)
       if (!section) return
       if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('activate')
+        navbarlink.classList.add('deactivate')
       } else {
         navbarlink.classList.remove('active')
       }

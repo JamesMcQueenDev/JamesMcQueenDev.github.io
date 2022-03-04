@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main {
-  margin-left: 300px;
+  
 }
 
 @media (max-width: 1199px) {
@@ -204,7 +204,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .hero-container {
-  position: relative;
+  position: absolute;
   /*z-index: 2;
   min-width: 300px;*/
 }

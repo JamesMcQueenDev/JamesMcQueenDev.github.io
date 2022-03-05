@@ -881,6 +881,11 @@ section {
   }
 }
 
+.contact a{
+  text-align: center;
+  font-size: large;
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -931,17 +936,18 @@ section {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 300px;
   z-index: 9999;
   opacity: 93%;
   background: #040b14;
+}
+#footer a{
+  text-align: center;
 }
 #footer .copyright {
   text-align: center;
 }
 #footer .credits {
   padding-top: 5px;
-  text-align: center;
   font-size: 13px;
   color: #eaebf0;
 }

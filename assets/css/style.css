@@ -51,9 +51,55 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
+header{
+
+}
+
+.nav-bar{
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+.nav-bar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.nav-bar a.logo {
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 25px;
+}
+
+.nav-bar a.nav-link:hover {
+  color: blue;
+}
+
+.nav-bar a.nav-link{
+  float: right;
+  padding-right: 25px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .nav-bar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .nav-bar-right {
+    float: none;
+  }
+}
 /*--------------------------------------------------------------
 # Header
---------------------------------------------------------------*/
+
 #header {
   position: fixed;
   top: 0;
@@ -105,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #149ddd;
   color: #fff;
   text-decoration: none;
-}
+}--------------------------------------------------------------*/
 
 #main {
   
@@ -124,6 +170,8 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
+
+/*--
 .nav-menu {
   padding: 30px 0 0 0;
 }
@@ -159,6 +207,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Mobile Navigation */
+/*
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
@@ -205,12 +254,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .hero-container {
   position: absolute;
-  /*z-index: 2;
-  min-width: 300px;*/
+  z-index: 2;
+  min-width: 300px;
 }
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 64px;
+  font-size: 100px;
   font-weight: 700;
   line-height: 56px;
   color: #fff;
@@ -219,7 +268,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero p {
   color: #fff;
   margin-bottom: 50px;
-  font-size: 26px;
+  font-size: 50px;
   font-family: "Poppins", sans-serif;
   z-index: 1;
 }
@@ -230,7 +279,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 3px solid #149ddd;
   z-index: 1;
 }
-/*
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -246,7 +295,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
-}*/
+}
 
 /*--------------------------------------------------------------
 # Sections General
@@ -286,6 +335,13 @@ section {
 }
 .section-title p {
   margin-bottom: 0;
+}
+
+
+
+.key-projects a{
+  padding-top: 25px;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -499,7 +555,7 @@ section {
   bottom: 0;
   transition: all ease-in-out 0.3s;
   z-index: 2;
-  opacity: 0;
+  opacity: 0.5;
 }
 .portfolio .portfolio-wrap .portfolio-links {
   opacity: 1;
@@ -517,7 +573,7 @@ section {
   font-size: 28px;
   text-align: center;
   background: rgba(20, 157, 221, 0.75);
-  transition: 0.3s;
+  transition: 0.1s;
   width: 50%;
 }
 .portfolio .portfolio-wrap .portfolio-links a:hover {

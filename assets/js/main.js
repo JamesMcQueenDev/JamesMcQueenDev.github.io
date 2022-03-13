@@ -71,7 +71,7 @@
   let backtotop = select('.back-to-top')
   if (backtotop) {
     const toggleBacktotop = () => {
-      if (window.innerHeight > 0) {
+      if (window.scrollY > 0) {
         backtotop.classList.add('active')
       } 
       else {

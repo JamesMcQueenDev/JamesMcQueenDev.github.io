@@ -1,0 +1,352 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  top: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serifs;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.mainsection {
+  height: 100vh;
+  margin: 0;
+}
+
+.mainsection h2 {
+  padding-top: 100px;
+  padding-left: 50px;
+  color: white;
+  margin: 0;
+}
+
+/*NAVBAR*/
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: large;
+}
+
+#navbar a:hover {
+  text-shadow: 1px 1px #000000;
+  transition: all 0.4s;
+}
+
+#navbar button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+#navbar button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/*HERO*/
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8)),
+    url(Background.png);
+  background-size: cover;
+}
+
+#hero a {
+  text-decoration: none;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 24px;
+  border: 2px solid #ffffff;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+#hero a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transition: 0.5s;
+}
+
+.neon {
+  font-weight: 1000;
+  font-size: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #00cfe1,
+    0 0 80px #00cfe1, 0 0 90px #00cfe1, 0 0 100px #00cfe1, 0 0 150px #00cfe1;
+}
+
+.clock span {
+  font-size: 50px;
+  width: 110px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.clock span::after {
+  font-size: 10px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#hrs::after {
+  content: "HOURS";
+}
+#mins::after {
+  content: "MINUTES";
+}
+#secs::after {
+  content: "SECONDS";
+}
+
+/*PROJECTS*/
+#projects {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(4, 250px);
+  gap: 10px;
+}
+
+.box {
+  display: grid;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.box:hover {
+  background-color: white;
+  transition: 0.5s ease;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: -100%; /* Initially hidden off-screen to the left */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 0.3s ease-in-out; /* Transition all properties for a smoother effect */
+}
+
+.overlay:hover {
+  opacity: 1;
+  left: 0; /* Slide into view from the left */
+}
+
+.box a {
+  text-decoration: none;
+  color: white;
+}
+
+.box a:hover {
+  color: black;
+}
+
+/*ABOUT*/
+#about {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+}
+
+/*EXPERIENCE*/
+#experience {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+}
+
+/*BACK TO TOP BUTTON*/
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 100;
+  background: #149ddd;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  transition: all 0.4s;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.back-to-top:hover {
+  background: #2eafec;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.back-to-top i {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*MODAL*/
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  z-index: 1;
+  border-radius: 10px;
+  filter: drop-shadow(5px 5px 10px #000);
+  max-width: 80%;
+  width: 75vw;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.modal.Active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#modalBody {
+  height: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#modalBody img {
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  width: 200px;
+}
+
+#modalBody p {
+  width: 70%;
+}
+
+#downloadBtn {
+  text-decoration: none;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 24px;
+  border: 2px solid #ffffff;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+#downloadBtn:hover {
+  background-color: #ffffff;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: #000000;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#links {
+  margin-top: 25px;
+  border-top: 1px solid black;
+  font-size: 50px;
+}
+
+.fa-brands {
+  color: white;
+  margin: 10px;
+}
+
+.fa-brands:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.fa-youtube {
+  color: #ff0000;
+}
+
+.fa-linkedin {
+  color: #0a66c2;
+}
+
+.fa-github {
+  color: #6e5494;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  pointer-events: none;
+}
+
+#overlay.Active {
+  opacity: 1;
+  pointer-events: all;
+}

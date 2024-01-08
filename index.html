@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<title>
-    James McQueen
-</title>
+
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="style.css">
     <script src="script.js"defer></script>
     <script
@@ -10,6 +10,10 @@
     crossorigin="anonymous"
     defer
   ></script>
+
+  <title>
+    James McQueen
+</title>
 </head>
 <body>
 
@@ -17,8 +21,8 @@
     
     <!--MODAL-->
     <div class="modal" id="modal">
-        <div id="modalBody">         
-            <img src="profilepicture.jpg">
+        <div id="modal-body">
+            <img src="profilepicture.jpg">         
             <h2>James McQueen</h2>
             <h3>DEVELOPER</h3>
             <p>My name is James. I have a degree in Computing BSc from the University of Worcester and a passion for both front-end and back-end development, I'm eager to build dynamic and user-friendly web experiences.</p>
@@ -52,22 +56,21 @@
             <span>:</span>
             <span id="secs">00</span>
         </div>
+
         <h1 class="neon">
             James McQueen
         </h1>
-        <a href="#projects">Explore</a>
+
+        <a class="hero-button" href="#projects">Explore</a>
     </div>
 
     <!--PROJECTS-->
     <div id="projects" class="mainsection">
-        <h2>Projects</h2>
-        <div class="grid">
-            <div class="box">
-                <a href="project.html">
-                    <div class="info">
-                        <h1>Portfolio Website</h1>
-                    </div>
-                        <div class="overlay"></div>
+        <div class="container">
+            <div class="grid">
+                <a class="box" href="project.html">
+                    <img src="profilepicture.jpg">
+                    <h1 class="overlay-title">Portfolio</h1>
                 </a>
             </div>
         </div>

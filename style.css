@@ -31,19 +31,24 @@ html {
 /*NAVBAR*/
 #navbar {
   position: fixed;
+  top: 0; /* Ensure it stays at the top */
+  right: 0; /* Position it to the right */
   display: flex;
   align-items: center;
-  text-align: right;
+  height: 80px; /* Adjust height as needed */
+  width: 100%; /* Ensure it spans the full width */
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  justify-content: flex-end; /* Align content to the right */
   overflow: hidden;
 }
 
 #navbar a {
-  float: right;
   color: #f2f2f2;
   text-align: center;
   padding: 20px;
   text-decoration: none;
   font-size: large;
+  margin-left: 20px; /* Add spacing between links */
 }
 
 #navbar a:hover {
@@ -58,6 +63,7 @@ html {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  margin-left: auto; /* Push the button to the right */
 }
 
 #navbar button:hover {
@@ -109,7 +115,6 @@ html {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #ffffff;
-
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #00cfe1,
     0 0 80px #00cfe1, 0 0 90px #00cfe1, 0 0 100px #00cfe1, 0 0 150px #00cfe1;
 }
@@ -161,7 +166,7 @@ html {
   width: 100%;
   height: 100%;
   border: 1px solid #000;
-  border-radius: 5px;
+  border-radius: 10px;
   text-decoration: none;
   overflow: hidden;
   transition: opacity 0.3s ease-in-out;
@@ -178,12 +183,13 @@ html {
 }
 
 .box:hover {
-  transform: translateY(-10px); /* Slight elevation on hover */
-  transition: 0.3s ease-in-out;
+  transform: translateY(-10px);
+  box-shadow: 2px 2px #000000;
+  transition: 0.05s ease-in-out;
 }
 
 .box:hover::before {
-  opacity: 1; /* Make the overlay visible on hover */
+  opacity: 1;
 }
 
 .overlay-title {
@@ -191,11 +197,13 @@ html {
   left: 50%;
   transform: translateX(-50%);
   color: #fff;
+  text-shadow: 2px 2px #000000;
   opacity: 0;
 }
 
 .box:hover .overlay-title {
   opacity: 1;
+  transition: 0.3s ease-in-out;
 }
 
 .box img {
@@ -251,32 +259,22 @@ html {
 
 /*MODAL*/
 .modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: 200ms ease-in-out;
-  z-index: 1;
-  border-radius: 10px;
-  filter: drop-shadow(5px 5px 10px #000);
-  max-width: 80%;
-  width: 75vw;
-  max-width: 800px;
-  overflow: hidden;
-
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 16px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 800px;
+  border-radius: 10px;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  filter: drop-shadow(5px 5px 10px #000);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.modal.Active {
-  transform: translate(-50%, -50%) scale(1);
+  overflow: hidden;
+  z-index: 1;
 }
 
 #modal-body {
@@ -286,12 +284,10 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 16px;
+  background-color: rgba(152, 152, 152, 0.5);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 #modal-body img {
@@ -305,7 +301,7 @@ html {
   text-align: center;
 }
 
-#downloadBtn {
+#download-button {
   text-decoration: none;
   display: inline-block;
   color: #ffffff;
@@ -316,7 +312,7 @@ html {
   margin-top: 20px;
 }
 
-#downloadBtn:hover {
+#download-button:hover {
   background-color: #ffffff;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   color: #000000;
@@ -351,6 +347,10 @@ html {
 
 .fa-github {
   color: #6e5494;
+}
+
+.modal.Active {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 #overlay {

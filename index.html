@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <script src="script.js"defer></script>
     <script
     src="https://kit.fontawesome.com/cbc4fe0430.js"
@@ -11,23 +13,21 @@
     defer
   ></script>
 
-  <title>
-    James McQueen
-</title>
+  <title>James McQueen</title>
 </head>
 <body>
-
+   
     <div id="overlay"></div>
     
     <!--MODAL-->
-    <div class="modal" id="modal">
-        <div id="modal-body">
+    <div class="modal clickable" id="modal">
+        <div class="modal-body">
             <img src="profilepicture.jpg">         
             <h2>James McQueen</h2>
             <h3>JUNIOR DEVELOPER</h3>
             <p>My name is James. I have a degree in Computing BSc from the University of Worcester and a passion for both front-end and back-end development, I'm eager to build dynamic and user-friendly web experiences.</p>
-            <a id="download-button">Download CV</a>
-            <div id="links">
+            <a class="download-button clickable">Download CV</a>
+            <div class="links">
                 <i class="fa-brands fa-youtube"></i>
                 <i class="fa-brands fa-linkedin"></i>
                 <i class="fa-brands fa-github"></i>
@@ -42,75 +42,101 @@
         <a href="#projects">PROJECTS</a>
         <a href="#about">ABOUT</a>
         <a href="#experience">EXPERIENCE</a>
-        <a class="contact"
-          ><button data-modal-target="#modal">CONTACT</button></a
+        <a 
+          ><button data-modal-target="#modal" class="clickable">CONTACT</button></a
         >
     </div>
 
     <!--HERO-->
     <div id="hero" class="mainsection">
-        <div class="clock">
-            <span id="hrs">00</span>
-            <span>:</span>
-            <span id="mins">00</span>
-            <span>:</span>
-            <span id="secs">00</span>
-        </div>
-
-        <h1 class="neon">
+        <h1>
             James McQueen
         </h1>
 
-        <a class="hero-button" href="#projects">Explore</a>
+        <a class="clickable" href="#projects">EXPLORE</a>
     </div>
 
     <!--PROJECTS-->
     <div id="projects" class="mainsection">
-        <div class="container">
             <div class="grid">
-                <a class="box" href="project.html">
+                <a class="box" href="/projects/algorithm-visualizer/project.html">
                     <img src="profilepicture.jpg">
-                    <h1 class="overlay-title">Portfolio</h1>
+                    <div class="box-overlay">
+                        <h2>Eeb</h2>
+                    </div>
                 </a>
                 <a class="box" href="project.html">
                     <img src="profilepicture.jpg">
-                    <h1 class="overlay-title">Portfolio</h1>
                 </a>
                 <a class="box" href="project.html">
                     <img src="profilepicture.jpg">
-                    <h1 class="overlay-title">Portfolio</h1>
-                </a>
-                                <a class="box" href="project.html">
-                    <img src="profilepicture.jpg">
-                    <h1 class="overlay-title">Portfolio</h1>
                 </a>
                 <a class="box" href="project.html">
                     <img src="profilepicture.jpg">
-                    <h1 class="overlay-title">Portfolio</h1>
                 </a>
                 <a class="box" href="project.html">
                     <img src="profilepicture.jpg">
-                    <h1 class="overlay-title">Portfolio</h1>
+                </a>
+                <a class="box" href="project.html">
+                    <img src="profilepicture.jpg">
+                </a>
+                <a class="box" href="project.html">
+                    <img src="profilepicture.jpg">
+                </a>
+                <a class="box" href="project.html">
+                    <img src="profilepicture.jpg">
+                </a>
+                <a class="box" href="project.html">
+                    <img src="profilepicture.jpg">
+                </a>
+                <a class="box" href="project.html">
+                    <img src="profilepicture.jpg">
+                </a>
+                <a class="box" href="project.html">
+                    <img src="profilepicture.jpg">
+                </a>
+                <a class="box" href="project.html">
+                    <img src="profilepicture.jpg">
                 </a>
             </div>
-        </div>
     </div>
 
     <!--ABOUT-->
     <div id="about" class="mainsection">
-        <h2>About</h2>
+        <div class="container">
+                <p>hello</p>
+        </div>
     </div>
 
     <!--EXPERIENCE-->
     <div id="experience" class="mainsection">
-        <h2>Experience</h2>
+        <div class="container">
+
+        </div>
     </div>
 
     <!--BACK TO TOP-->
-    <a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+    <a href="#" class="clickable back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
 
 </body>
 <footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <div class="links">
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+        <div class="footer-right">
+            <form>
+                <input id="email" placeholder="Email">
+                <input id="message" placeholder="Message">
+                <button class="clickable">SEND</button>
+            </form>
+        </div>
+    </div>
+    <p>&copy; James McQueen 2024</p>
 
 </footer>
 </html>

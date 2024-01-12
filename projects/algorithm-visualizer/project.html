@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/project.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="script.js"defer></script>
+    <script
+    src="https://kit.fontawesome.com/cbc4fe0430.js"
+    crossorigin="anonymous"
+    defer
+  ></script>
+
+  <title>James McQueen</title>
+</head>
+<body>
+
+<body>
+    <!--NAVBAR-->
+    <div id="navbar">
+       <a class="clickable return-button" href="../../index.html">Return</a>
+    </div>
+    <div class="mainsection">
+        <div class="container">
+            <h2>Algorithm Visualizer</h2>
+                
+            <a class="clickable repo">GitHub</a>
+
+        </div>
+    </div>
+        <div class="visualizer">
+            <div class="buttonsContainer">
+                <label class="switch">
+                    <input id="colourMode" type="checkbox" />
+
+                    <span class="slider round"></span>
+                </label>
+                <button id="bubbleSort" class="sortButtons clickable">Bubble Sort</button>
+                <button id="insertionSort" class="sortButtons clickable">Insertion Sort</button>
+
+                <div class="right">
+                    <input type="range" id="slider" min="10" max="100" value="10"><a id="valueText">10s</a></input>
+                    <button id="randomizeArray" class="sortButtons clickable">Randomize Array</button>
+                </div>
+                </div>
+                <div class="algo-container">
+                <div class="barsContainer" id="barsContainer"></div>
+                </div>
+
+                <div class="scaleContainer"></div>
+        </div>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <div class="links">
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+        <div class="footer-right">
+            <form>
+                <input id="email" placeholder="Email">
+                <input id="message" placeholder="Message">
+                <button class="clickable">SEND</button>
+            </form>
+        </div>
+    </div>
+    <p>&copy; James McQueen 2024</p>
+</html>

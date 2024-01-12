@@ -1,0 +1,28 @@
+.mainsection {
+  margin-top: 10vh;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.repo {
+  padding: 9px 25px;
+}
+
+.repo:hover {
+  color: #ffffff;
+  background-color: #6e5494;
+  transition: 0.3s ease-in-out;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: #ffffff;
+  border: 3px solid #000000;
+  box-shadow: 3px 3px #000000;
+}

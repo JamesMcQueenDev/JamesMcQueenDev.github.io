@@ -19,10 +19,19 @@
 .container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   width: 500px;
   height: 500px;
   background-color: #ffffff;
   border: 3px solid #000000;
   box-shadow: 3px 3px #000000;
+}
+
+.container p {
+  margin: 50px;
+}
+
+h1 {
+  text-align: center;
 }

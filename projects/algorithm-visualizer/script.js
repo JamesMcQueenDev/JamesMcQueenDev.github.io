@@ -7,7 +7,6 @@ let mergeSort = document.getElementById("mergeSort");
 let valueText = document.getElementById("valueText");
 
 let barsContainer = document.getElementById("barsContainer");
-let colourMode = document.getElementById("colourMode");
 
 let slider = document.getElementById("slider");
 
@@ -42,14 +41,6 @@ function RenderBars(array) {
     barsContainer.appendChild(bar);
   }
 }
-
-colourMode.addEventListener("change", function () {
-  if (this.checked) {
-    bodyColour.classList.add("dark-mode");
-  } else {
-    bodyColour.classList.remove("dark-mode");
-  }
-});
 
 document.addEventListener("DOMContentLoaded", function () {
   Update();

@@ -10,8 +10,8 @@
 }
 
 .visualizer {
-  padding-top: 50px;
-  height: 50vh;
+  width: 100%;
+  padding-top: 25px;
   background-color: #ffffff;
 }
 

@@ -54,12 +54,28 @@ randomizeArray.addEventListener("click", function () {
 });
 
 bubbleSort.addEventListener("click", function () {
-  BubbleSort(unsortedArray);
+  DisableButtons();
+  BubbleSort(unsortedArray).then(() => EnableButtons());
 });
 
 insertionSort.addEventListener("click", function () {
-  InsertionSort(unsortedArray);
+  DisableButtons();
+  InsertionSort(unsortedArray).then(() => EnableButtons());
 });
+
+function DisableButtons() {
+  bubbleSort.disabled = true;
+  insertionSort.disabled = true;
+  randomizeArray.disabled = true;
+  slider.disabled = true;
+}
+
+function EnableButtons() {
+  bubbleSort.disabled = false;
+  insertionSort.disabled = false;
+  randomizeArray.disabled = false;
+  slider.disabled = false;
+}
 
 function Sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));

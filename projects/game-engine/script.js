@@ -61,6 +61,10 @@ insertionSort.addEventListener("click", function () {
   InsertionSort(unsortedArray);
 });
 
+mergeSort.addEventListener("click", function () {
+  MergeSort(unsortedArray);
+});
+
 function Sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }

@@ -48,8 +48,9 @@
   text-transform: uppercase;
   letter-spacing: 5px;
   color: #ffffff;
+
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    5px 5px #000000;
+    5px 5px #e600ff, 10px 10px #000000;
 }
 
 /*PROJECTS*/

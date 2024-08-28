@@ -11,12 +11,13 @@
 
 .visualizer {
   padding-top: 50px;
+  height: 50vh;
   background-color: #ffffff;
 }
 
 .visualizer p {
-  position: relative;
-  z-index: 1;
+  text-align: center;
+  font-style: italic;
 }
 
 .barsContainer {

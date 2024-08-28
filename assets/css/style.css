@@ -3,7 +3,7 @@ body {
   margin: 0;
   top: 0;
   font-family: "Roboto", sans-serifs;
-  background-color: #9cf6f6;
+  background-color: #59b7ff;
 }
 
 html {
@@ -90,50 +90,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 50vh;
-  background-color: #b5d6d6;
-}
-
-.footer-container {
-  display: flex; /* Container for horizontal layout of left and right sections */
-  justify-content: space-around; /* Distribute space between left and right */
-  width: 75%;
-  max-width: 1000px;
-}
-
-.footer-right {
-  font-size: 50px;
-  padding-left: 100px;
-  border-left: 2px solid #000;
-}
-
-footer form {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-}
-
-footer input {
-  margin-top: 10px;
-  border: 3px solid #000000;
-  box-shadow: 3px 3px #000000;
-}
-
-footer button {
-  margin-top: 10px;
-  height: 50px;
-}
-
-#email {
-  height: 30px;
-}
-
-#message {
-  height: 150px;
-}
-
-footer p {
-  margin-top: 50px;
+  height: 100%;
 }
 
 .links {
